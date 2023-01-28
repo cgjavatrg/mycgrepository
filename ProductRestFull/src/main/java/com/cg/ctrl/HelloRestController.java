@@ -12,4 +12,9 @@ public class HelloRestController {
 		System.out.println("heelo........");
 		return "Hello Cg! from Spring Framework!";
 	}
+	
+	@RequestMapping(value="/greet")
+	public String greet() {
+			return "Welcome Spring Framework!";
+	}
 }
