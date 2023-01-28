@@ -141,4 +141,9 @@ class ProductServiceTest {
 		
 	}
 	
+	@Test
+	public void test() {
+		assertEquals(10, 10);
+	}
+	
 }
