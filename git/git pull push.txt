@@ -1,0 +1,68 @@
+
+D:\mygit>echo initialize remote repository
+initialize remote repository
+
+D:\mygit>git remote add origin https://github.com/cgjavatrg/testrepo.git
+
+D:\mygit>echo push the local repository files to remote repository
+push the local repository files to remote repository
+
+D:\mygit>git push origin master
+info: please complete authentication in your browser...
+Enumerating objects: 24, done.
+Counting objects: 100% (24/24), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (24/24), 1.73 KiB | 886.00 KiB/s, done.
+Total 24 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/cgjavatrg/testrepo.git
+ * [new branch]      master -> master
+
+D:\mygit>dir
+ Volume in drive D is New Volume
+ Volume Serial Number is B0AA-9237
+
+ Directory of D:\mygit
+
+05-08-2021  11:52    <DIR>          .
+05-08-2021  11:52    <DIR>          ..
+05-08-2021  11:52                90 aa.txt
+               1 File(s)             90 bytes
+               2 Dir(s)  251,503,902,720 bytes free
+
+D:\mygit>git pull origin master
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 658 bytes | 73.00 KiB/s, done.
+From https://github.com/cgjavatrg/testrepo
+ * branch            master     -> FETCH_HEAD
+   f5ac0f5..11b95c9  master     -> origin/master
+Updating f5ac0f5..11b95c9
+Fast-forward
+ bb.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 bb.txt
+
+D:\mygit>echo git pull will retirive chaged project at remote repository and copy to local repository
+git pull will retirive chaged project at remote repository and copy to local repository
+
+D:\mygit>dir
+ Volume in drive D is New Volume
+ Volume Serial Number is B0AA-9237
+
+ Directory of D:\mygit
+
+05-08-2021  12:02    <DIR>          .
+05-08-2021  12:02    <DIR>          ..
+05-08-2021  11:52                90 aa.txt
+05-08-2021  12:02                14 bb.txt
+               2 File(s)            104 bytes
+               2 Dir(s)  251,503,902,720 bytes free
+
+D:\mygit>type bb.txt
+I am manjiri
+
+D:\mygit>

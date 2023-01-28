@@ -1,0 +1,105 @@
+crosoft Windows [Version 10.0.19042.1110]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\manji>d:
+
+D:\>cd mygit
+
+D:\mygit>echo check the version of git
+check the version of git
+
+D:\mygit>git --version
+git version 2.32.0.windows.2
+
+D:\mygit>echo To initailze as a local repository
+To initailze as a local repository
+
+D:\mygit>git init
+Initialized empty Git repository in D:/mygit/.git/
+
+D:\mygit>dir
+ Volume in drive D is New Volume
+ Volume Serial Number is B0AA-9237
+
+ Directory of D:\mygit
+
+05-08-2021  10:09    <DIR>          .
+05-08-2021  10:09    <DIR>          ..
+05-08-2021  10:10                 2 aa.txt
+               1 File(s)              2 bytes
+               2 Dir(s)  251,503,939,584 bytes free
+
+D:\mygit>echo to check the status of files
+to check the status of files
+
+D:\mygit>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        aa.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\mygit>echo to store files to local repository first we need to add to the staging area
+to store files to local repository first we need to add to the staging area
+
+D:\mygit>git add aa.txt
+
+D:\mygit>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   aa.txt
+
+
+D:\mygit>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   aa.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   aa.txt
+
+
+D:\mygit>echo to store file in a local repository from staging area
+to store file in a local repository from staging area
+
+D:\mygit>git commit -m "model1"
+[master (root-commit) 4650c09] model1
+ 1 file changed, 1 insertion(+)
+ create mode 100644 aa.txt
+
+D:\mygit>git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   aa.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+D:\mygit>cat aa.txt
+'cat' is not recognized as an internal or external command,
+operable program or batch file.
+
+D:\mygit>git add aa.txt
+
+D:\mygit>git commit -m "model1_1"
+[master 635b6ed] model1_1
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+D:\mygit>git status
+On branch master
+nothing to commit, working tree clean

@@ -1,0 +1,51 @@
+Microsoft Windows [Version 10.0.19042.1110]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\manji>cd\
+
+C:\>d:
+
+D:\>md manju
+
+D:\>cd manju
+
+D:\manju>git clone https://github.com/cgjavatrg/javarepo.git
+Cloning into 'javarepo'...
+remote: Enumerating objects: 41, done.
+remote: Counting objects: 100% (41/41), done.
+remote: Compressing objects: 100% (28/28), done.
+remote: Total 41 (delta 5), reused 38 (delta 2), pack-reused 0
+Receiving objects: 100% (41/41), 6.14 KiB | 3.07 MiB/s, done.
+Resolving deltas: 100% (5/5), done.
+
+D:\manju>dir
+ Volume in drive D is New Volume
+ Volume Serial Number is B0AA-9237
+
+ Directory of D:\manju
+
+05-08-2021  14:10    <DIR>          .
+05-08-2021  14:10    <DIR>          ..
+05-08-2021  14:10    <DIR>          javarepo
+               0 File(s)              0 bytes
+               3 Dir(s)  251,415,781,376 bytes free
+
+D:\manju>cd javarepo
+
+D:\manju\javarepo>dir
+ Volume in drive D is New Volume
+ Volume Serial Number is B0AA-9237
+
+ Directory of D:\manju\javarepo
+
+05-08-2021  14:10    <DIR>          .
+05-08-2021  14:10    <DIR>          ..
+05-08-2021  14:10                13 .gitignore
+05-08-2021  14:10    <DIR>          mavenproj
+               1 File(s)             13 bytes
+               3 Dir(s)  251,415,781,376 bytes free
+
+D:\manju\javarepo>echo cloning will copy remote repository to local folder and make local folder as local repository
+cloning will copy remote repository to local folder and make local folder as local repository
+
+D:\manju\javarepo>

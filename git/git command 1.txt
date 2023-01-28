@@ -1,0 +1,149 @@
+
+D:\mygit>git config --global user.email "javatraings8@gmail.com"
+
+D:\mygit>git config --global user.name "manjiri"
+
+D:\mygit>git log
+commit 635b6edc9907f6f7477006b6d2f8dd156c79796f (HEAD -> master)
+Author: manjiri <swamiajoba.manju@gmail.com>
+Date:   Thu Aug 5 10:19:01 2021 +0530
+
+    model1_1
+
+commit 4650c0981bb249d31b211d4864f2361d25efebf8
+Author: manjiri <swamiajoba.manju@gmail.com>
+Date:   Thu Aug 5 10:17:46 2021 +0530
+
+    model1
+
+D:\mygit>echo see branches
+see branches
+
+D:\mygit>git branch
+* master
+
+D:\mygit>echo create new branch
+create new branch
+
+D:\mygit>git branch br1
+
+D:\mygit>git branch
+  br1
+* master
+
+D:\mygit>echo to go to br1 branch
+to go to br1 branch
+
+D:\mygit>git checkout br1
+Switched to branch 'br1'
+
+D:\mygit>git branch
+* br1
+  master
+
+D:\mygit>start aa.txt
+
+D:\mygit>git add aa.txt
+
+D:\mygit>git commit -m "model2"
+[br1 bd4a74c] model2
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+D:\mygit>git log
+commit bd4a74ca038b2cd5ad5ed31bbf8e9cfe09885a56 (HEAD -> br1)
+Author: manjiri <javatraings8@gmail.com>
+Date:   Thu Aug 5 11:25:42 2021 +0530
+
+    model2
+
+commit 635b6edc9907f6f7477006b6d2f8dd156c79796f (master)
+Author: manjiri <swamiajoba.manju@gmail.com>
+Date:   Thu Aug 5 10:19:01 2021 +0530
+
+    model1_1
+
+commit 4650c0981bb249d31b211d4864f2361d25efebf8
+Author: manjiri <swamiajoba.manju@gmail.com>
+Date:   Thu Aug 5 10:17:46 2021 +0530
+
+
+D:\mygit>start aa.txt
+
+D:\mygit>git add .
+
+D:\mygit>git commit -m "model2_1"
+[br1 f8f9912] model2_1
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+D:\mygit>git branch
+* br1
+  master
+
+D:\mygit>git checkout master
+Switched to branch 'master'
+
+D:\mygit>type aa.txt
+m1 - model1
+D:\mygit>echo chages done in branch br1 is unaware to master
+chages done in branch br1 is unaware to master
+
+D:\mygit>git checkout br1
+Switched to branch 'br1'
+
+D:\mygit>type aa.txt
+m1 - model1
+m2 - model2
+m2_1 - model2_1
+D:\mygit>git chckout master
+git: 'chckout' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+
+D:\mygit>git checkout master
+Switched to branch 'master'
+
+D:\mygit>type aa.txt
+m1 - model1
+D:\mygit>echo in order to save chages of branch br1 , merge br1 changes
+in order to save chages of branch br1 , merge br1 changes
+
+D:\mygit>git merge br1
+Updating 635b6ed..f8f9912
+Fast-forward
+ aa.txt | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+D:\mygit>git brach
+git: 'brach' is not a git command. See 'git --help'.
+
+The most similar command is
+        branch
+
+D:\mygit>git branch
+  br1
+* master
+
+D:\mygit>type aa.txt
+m1 - model1
+m2 - model2
+m2_1 - model2_1
+D:\mygit>git log
+commit f8f99129794d256778849db239fd87f0772f1f07 (HEAD -> master, br1)
+Author: manjiri <javatraings8@gmail.com>
+Date:   Thu Aug 5 11:28:36 2021 +0530
+
+    model2_1
+
+commit bd4a74ca038b2cd5ad5ed31bbf8e9cfe09885a56
+Author: manjiri <javatraings8@gmail.com>
+Date:   Thu Aug 5 11:25:42 2021 +0530
+
+    model2
+
+commit 635b6edc9907f6f7477006b6d2f8dd156c79796f
+Author: manjiri <swamiajoba.manju@gmail.com>
+Date:   Thu Aug 5 10:19:01 2021 +0530
+
+
+D:\mygit>

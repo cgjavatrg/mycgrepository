@@ -1,0 +1,77 @@
+
+D:\mygit>git branch
+  br1
+* master
+
+D:\mygit>start aa.txt
+
+D:\mygit>git add .
+
+D:\mygit>git commit -m "model3"
+[master 3a6fdc1] model3
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+D:\mygit>start aa.txt
+
+D:\mygit>git add .
+
+D:\mygit>git commit -m "model4"
+[master d8772ed] model4
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+D:\mygit>git checkout br1
+Switched to branch 'br1'
+
+D:\mygit>start aa.txt
+
+D:\mygit>git add .
+
+D:\mygit>git commit -m "model5"
+[br1 e9e1b1a] model5
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+D:\mygit>type aa.txt
+m1 - model1
+m2 - model2
+m2_1 - model2_1
+
+m5 - model5
+D:\mygit>git rebase master
+error: could not apply e9e1b1a... model5
+Resolve all conflicts manually, mark them as resolved with
+"git add/rm <conflicted_files>", then run "git rebase --continue".
+You can instead skip this commit: run "git rebase --skip".
+To abort and get back to the state before "git rebase", run "git rebase --abort".
+Could not apply e9e1b1a... model5
+Auto-merging aa.txt
+CONFLICT (content): Merge conflict in aa.txt
+
+D:\mygit>start aa.txt
+
+D:\mygit>git commit -m "done "
+error: Committing is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+U       aa.txt
+
+D:\mygit>git rebase master
+fatal: It seems that there is already a rebase-merge directory, and
+I wonder if you are in the middle of another rebase.  If that is the
+case, please try
+        git rebase (--continue | --abort | --skip)
+If that is not the case, please
+        rm -fr ".git/rebase-merge"
+and run me again.  I am stopping in case you still have something
+valuable there.
+
+
+D:\mygit>start aa.txt
+
+D:\mygit>git add .
+
+D:\mygit>git commit -m "final "
+[detached HEAD 1650a18] final
+ 1 file changed, 2 insertions(+)
+
+D:\mygit>

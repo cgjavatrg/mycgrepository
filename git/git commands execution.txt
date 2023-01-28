@@ -1,0 +1,396 @@
+C:\Users\manji>cd\
+
+C:\>d:
+
+D:\>cd mygit
+
+D:\mygit>echo initialize as local repository
+initialize as local repository
+
+D:\mygit>git init
+Initialized empty Git repository in D:/mygit/.git/
+
+D:\mygit>dir
+ Volume in drive D is New Volume
+ Volume Serial Number is B0AA-9237
+
+ Directory of D:\mygit
+
+07-10-2022  10:52    <DIR>          .
+07-10-2022  10:52    <DIR>          ..
+               0 File(s)              0 bytes
+               2 Dir(s)  222,273,687,552 bytes free
+
+D:\mygit>echo global configuration
+global configuration
+
+D:\mygit>git config --global user.email "javatraings8@gmail.com"
+
+D:\mygit>git config --global user.name "manjiri"
+
+D:\mygit>dir
+ Volume in drive D is New Volume
+ Volume Serial Number is B0AA-9237
+
+ Directory of D:\mygit
+
+07-10-2022  10:57    <DIR>          .
+07-10-2022  10:57    <DIR>          ..
+07-10-2022  10:57                28 aa.txt
+               1 File(s)             28 bytes
+               2 Dir(s)  222,273,683,456 bytes free
+
+D:\mygit>echo to view the status of files
+to view the status of files
+
+D:\mygit>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        aa.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\mygit>echo in order to commit untracked file into local repository we need to add in a staging area
+in order to commit untracked file into local repository we need to add in a staging area
+
+D:\mygit>git add aa.txt
+
+D:\mygit>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   aa.txt
+
+
+D:\mygit>echo new file has to be commited into local repository
+new file has to be commited into local repository
+
+D:\mygit>git commit -m "first commit"
+[master (root-commit) 4ba017f] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 aa.txt
+
+D:\mygit>git status
+On branch master
+nothing to commit, working tree clean
+
+D:\mygit>echo in order to find commit status
+in order to find commit status
+
+D:\mygit>git log
+commit 4ba017f880e7fab794e430494ca3a0d36a43dc97 (HEAD -> master)
+Author: manjiri <javatraings8@gmail.com>
+Date:   Fri Oct 7 11:02:38 2022 +0530
+
+    first commit
+
+D:\mygit>start aa.txt
+
+D:\mygit>git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   aa.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+D:\mygit>type aa.txt
+This is my first file aa.txt
+File is modifed
+D:\mygit>echo in order to commit modified file we need to add in staging area then commit or wirte following commit to directly commit
+in order to commit modified file we need to add in staging area then commit or wirte following commit to directly commit
+
+D:\mygit>git commit -a -m "modified 1"
+[master b65196a] modified 1
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+D:\mygit>git status
+On branch master
+nothing to commit, working tree clean
+
+D:\mygit>git log
+commit b65196adead8e3c25458a7d1188115dd82dee5ac (HEAD -> master)
+Author: manjiri <javatraings8@gmail.com>
+Date:   Fri Oct 7 11:07:49 2022 +0530
+
+    modified 1
+
+commit 4ba017f880e7fab794e430494ca3a0d36a43dc97
+Author: manjiri <javatraings8@gmail.com>
+Date:   Fri Oct 7 11:02:38 2022 +0530
+
+    first commit
+
+
+
+D:\mygit>git branch
+* master
+
+D:\mygit>echo create new branch
+create new branch
+
+D:\mygit>git branch br1
+
+D:\mygit>git branch
+  br1
+* master
+
+D:\mygit>echo to go with branch br1
+to go with branch br1
+
+D:\mygit>git checkout br1
+Switched to branch 'br1'
+
+D:\mygit>git branch
+* br1
+  master
+
+D:\mygit>dir
+ Volume in drive D is New Volume
+ Volume Serial Number is B0AA-9237
+
+ Directory of D:\mygit
+
+07-10-2022  11:12    <DIR>          .
+07-10-2022  11:12    <DIR>          ..
+07-10-2022  11:05                45 aa.txt
+07-10-2022  11:12                36 bb.txt
+               2 File(s)             81 bytes
+               2 Dir(s)  222,273,679,360 bytes free
+
+D:\mygit>echo commit in branch br1
+commit in branch br1
+
+D:\mygit>git add bb.txt
+
+D:\mygit>git commit -m "branch br1 commit"
+[br1 9a5f82f] branch br1 commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 bb.txt
+
+D:\mygit>git log
+commit 9a5f82fd40efbd408571e1a271190ad12fc97e39 (HEAD -> br1)
+Author: manjiri <javatraings8@gmail.com>
+Date:   Fri Oct 7 11:13:08 2022 +0530
+
+    branch br1 commit
+
+commit b65196adead8e3c25458a7d1188115dd82dee5ac (master)
+Author: manjiri <javatraings8@gmail.com>
+Date:   Fri Oct 7 11:07:49 2022 +0530
+
+    modified 1
+
+commit 4ba017f880e7fab794e430494ca3a0d36a43dc97
+Author: manjiri <javatraings8@gmail.com>
+Date:   Fri Oct 7 11:02:38 2022 +0530
+
+
+D:\mygit>git branch
+* br1
+  master
+
+D:\mygit>git checkout master
+Switched to branch 'master'
+
+D:\mygit>dir
+ Volume in drive D is New Volume
+ Volume Serial Number is B0AA-9237
+
+ Directory of D:\mygit
+
+07-10-2022  11:14    <DIR>          .
+07-10-2022  11:14    <DIR>          ..
+07-10-2022  11:05                45 aa.txt
+               1 File(s)             45 bytes
+               2 Dir(s)  222,273,675,264 bytes free
+
+D:\mygit>echo in order to merge branch br1 into master
+in order to merge branch br1 into master
+
+D:\mygit>git merge br1
+Updating b65196a..9a5f82f
+Fast-forward
+ bb.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 bb.txt
+
+D:\mygit>dir
+ Volume in drive D is New Volume
+ Volume Serial Number is B0AA-9237
+
+ Directory of D:\mygit
+
+07-10-2022  11:16    <DIR>          .
+07-10-2022  11:16    <DIR>          ..
+07-10-2022  11:05                45 aa.txt
+07-10-2022  11:16                36 bb.txt
+               2 File(s)             81 bytes
+               2 Dir(s)  222,273,675,264 bytes free
+
+D:\mygit>echo instead of merge we can use rebase. Rebase is linear
+instead of merge we can use rebase. Rebase is linear
+
+D:\mygit>git checkout br1
+Switched to branch 'br1'
+
+D:\mygit>git branch
+* br1
+  master
+
+D:\mygit>start notepad
+
+D:\mygit>dir
+ Volume in drive D is New Volume
+ Volume Serial Number is B0AA-9237
+
+ Directory of D:\mygit
+
+07-10-2022  11:18    <DIR>          .
+07-10-2022  11:18    <DIR>          ..
+07-10-2022  11:05                45 aa.txt
+07-10-2022  11:16                36 bb.txt
+07-10-2022  11:18                29 cc.txt
+               3 File(s)            110 bytes
+               2 Dir(s)  222,273,675,264 bytes free
+
+D:\mygit>git add cc.txt
+
+D:\mygit>git commit -m "br1 commit for cc.txt"
+[br1 a8fc855] br1 commit for cc.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 cc.txt
+
+D:\mygit>git checkout master
+Switched to branch 'master'
+
+D:\mygit>dir
+ Volume in drive D is New Volume
+ Volume Serial Number is B0AA-9237
+
+ Directory of D:\mygit
+
+07-10-2022  11:19    <DIR>          .
+07-10-2022  11:19    <DIR>          ..
+07-10-2022  11:05                45 aa.txt
+07-10-2022  11:16                36 bb.txt
+               2 File(s)             81 bytes
+               2 Dir(s)  222,273,675,264 bytes free
+
+D:\mygit>git rebase br1
+Successfully rebased and updated refs/heads/master.
+
+D:\mygit>dir
+ Volume in drive D is New Volume
+ Volume Serial Number is B0AA-9237
+
+ Directory of D:\mygit
+
+07-10-2022  11:19    <DIR>          .
+07-10-2022  11:19    <DIR>          ..
+07-10-2022  11:05                45 aa.txt
+07-10-2022  11:16                36 bb.txt
+07-10-2022  11:19                29 cc.txt
+               3 File(s)            110 bytes
+               2 Dir(s)  222,273,675,264 bytes free
+
+D:\mygit>
+
+D:\mygit>echo initialize remote repository on github
+initialize remote repository on github
+
+D:\mygit>git remote add origin https://github.com/cgjavatrg/myrepo2.git
+
+D:\mygit>echo in order to push local repository to remote repository
+in order to push local repository to remote repository
+
+D:\mygit>git push origin master
+Enumerating objects: 12, done.
+Counting objects: 100% (12/12), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (12/12), 978 bytes | 244.00 KiB/s, done.
+Total 12 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/cgjavatrg/myrepo2.git
+ * [new branch]      master -> master
+
+D:\mygit>dir
+ Volume in drive D is New Volume
+ Volume Serial Number is B0AA-9237
+
+ Directory of D:\mygit
+
+07-10-2022  11:19    <DIR>          .
+07-10-2022  11:19    <DIR>          ..
+07-10-2022  11:05                45 aa.txt
+07-10-2022  11:16                36 bb.txt
+07-10-2022  11:19                29 cc.txt
+               3 File(s)            110 bytes
+               2 Dir(s)  222,273,671,168 bytes free
+
+D:\mygit>echo in order to bring reomote repository change in local repositry
+in order to bring reomote repository change in local repositry
+
+D:\mygit>git pull origin master
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 683 bytes | 31.00 KiB/s, done.
+From https://github.com/cgjavatrg/myrepo2
+ * branch            master     -> FETCH_HEAD
+   a8fc855..def6e6f  master     -> origin/master
+Updating a8fc855..def6e6f
+Fast-forward
+ dd.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 dd.txt
+
+D:\mygit>dir
+ Volume in drive D is New Volume
+ Volume Serial Number is B0AA-9237
+
+ Directory of D:\mygit
+
+07-10-2022  11:30    <DIR>          .
+07-10-2022  11:30    <DIR>          ..
+07-10-2022  11:05                45 aa.txt
+07-10-2022  11:16                36 bb.txt
+07-10-2022  11:19                29 cc.txt
+07-10-2022  11:30                52 dd.txt
+               4 File(s)            162 bytes
+               2 Dir(s)  222,273,667,072 bytes free
+
+D:\mygit>type dd.txt
+This is a extra file into github remote repository
+
+D:\mygit>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

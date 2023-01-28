@@ -1,0 +1,65 @@
+Source Code Version Control System
+---------------------------------------------------------
+Dev1  -- login module entity,repository,service,controller
+
+Dev2  -- flat module entity,repository,service,controller
+
+
+
+We need to maintain
+	-- who has developed source code at what time
+	-- who has modifed a code
+	-- keep source code per user
+This is called Source code management
+Source code , history must be stored and maintained at certain place and 
+that will be called as version control system VCS
+
+VCS are of two types
+
+Centralized VCS
+--------------------------
+
+		Centralized Server ( Remote Repository )
+			|	|
+			|	|
+		            Dev1        Dev2
+
+If Server fails , then you will not have updated source code
+
+Distributed VCS
+---------------------
+
+		Centralized Server ( Remote Repository )
+			|		|
+			|		|
+		            Dev1       	           Dev2
+		Local Repository          Local Repository
+
+Even if Central server fails, peer will be having a copy of the source
+
+Git is a Distributed VCS
+For Local Repository , we are using Git
+For Remote Repository , we are using Github
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
